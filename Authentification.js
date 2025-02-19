@@ -1,19 +1,36 @@
-document.getElementById('toggle-link').addEventListener('click', function (event) {
-    event.preventDefault();
-    const formTitle = document.getElementById('form-title');
-    const nameField = document.getElementById('name-field');
-    const submitButton = document.querySelector('button');
-    const toggleText = document.getElementById('toggle-text');
+$(document).ready(function() {
+    // Lorsque le formulaire est soumis
+    $('#auth-form').on('submit', function(e) {
+        e.preventDefault(); // Empêche l'envoi classique du formulaire
 
-    if (formTitle.innerText === 'Connexion') {
-        formTitle.innerText = 'Inscription';
-        nameField.classList.remove('hidden');
-        submitButton.innerText = 'S\'inscrire';
-        toggleText.innerHTML = 'Déjà un compte ? <a href="#" id="toggle-link">Se connecter</a>';
-    } else {
-        formTitle.innerText = 'Connexion';
-        nameField.classList.add('hidden');
-        submitButton.innerText = 'Se connecter';
-        toggleText.innerHTML = 'Pas encore de compte ? <a href="#" id="toggle-link">S\'inscrire</a>';
-    }
+        // Récupérer les valeurs des champs du formulaire
+        var email = $('#email').val();
+        var password = $('#password').val();
+
+        // Vérifier que les champs ne sont pas vides
+        if (!email || !password) {
+            console.log('Email et mot de passe sont nécessaires');
+            return;
+        }
+
+        // Requête AJAX
+        $.ajax({
+            url: 'http://localhost:8000/user_register', // URL de l'API
+            method: 'POST',
+            contentType: 'application/json', // Envoi des données en JSON
+            data: JSON.stringify({
+                email: email,
+                password: password
+            }),
+            success: function(response) {
+                // Afficher la réponse de la requête dans la console
+                console.log('Réponse réussie:', response);
+            },
+            error: function(xhr, status, error) {
+                // Afficher l'erreur dans la console
+                console.log('Erreur AJAX:', status, error);
+                console.log('Détails de la réponse:', xhr.responseText);
+            }
+        });
+    });
 });

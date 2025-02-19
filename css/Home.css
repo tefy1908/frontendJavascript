@@ -1,0 +1,134 @@
+body {
+  font-family: "Montserrat", serif;
+  padding: 50px 100px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn {
+  max-height: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.btnRegister {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #30a8dc;
+  border: none;
+  color: #07252e;
+  text-decoration: none;
+}
+.btnConnexion {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #30a8dc;
+  border: none;
+  color: #07252e;
+  text-decoration: none;
+}
+.presentation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 30px;
+}
+.txtPresentation {
+  flex: 1;
+  font-size: 64px;
+  font-weight: 600;
+}
+.txtPresentation2 {
+  color: #4b595c;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.txtPresentation3 {
+  color: #4b595c;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.imgPresentation {
+  flex: 1;
+  max-height: 500px;
+}
+.imgLogo {
+  max-width: 140px;
+  max-height: 140px;
+}
+.gras-noir {
+  font-weight: bold;
+  color: #07252e;
+}
+
+.mot-couleur {
+  color: #30a8dc;
+  font-weight: bold;
+}
+.CardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #30a8dc;
+  background-color: white;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 30px;
+  text-align: center;
+}
+
+.titreCard {
+  font-size: 24px;
+  color: black;
+  font-weight: 600;
+}
+.texteCard {
+  font-size: 14px;
+  color: #4b595c;
+}
+
+
+.FooterHome{
+  display: flex;
+  justify-content: space-between;
+  background-color: #30a8dc;
+  width: 100%;
+  color: white;
+  padding: 20px;
+}
+.CardFooter{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.a:hover {
+  text-decoration: underline;
+}
+.CardFooter a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.CardFooter a:hover {
+  text-decoration: underline; 
+}

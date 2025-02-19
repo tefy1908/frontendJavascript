@@ -1,0 +1,31 @@
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 80vh;
+    max-width: 200px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    border-right: 1px solid  #30a8dc ;
+    border-bottom: 1px solid  #30a8dc ;
+    border-radius: 20px;
+    text-align: center;
+}
+.imgLogo{
+    max-width: 140px;
+    max-height: 140px;
+}
+.Navbar a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.Navbar a svg {
+    transition: color 0.3s ease; 
+}
+
+.Navbar a:hover svg {
+    color: #30a8dc; 
+}

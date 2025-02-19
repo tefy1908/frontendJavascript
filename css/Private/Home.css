@@ -1,0 +1,207 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+}
+
+.containerPage {
+  display: flex;
+  margin: 0
+
+
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 80vh;
+    max-width: 200px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    border-right: 1px solid  #30a8dc ;
+    border-bottom: 1px solid  #30a8dc ;
+    border-radius: 20px;
+    text-align: center;
+}
+.parametre{
+    margin-top: auto; 
+
+}
+
+.Page{
+    display: flex;
+    gap: 100px;
+    padding: 50px 100px;
+}
+.imgLogo{
+    max-width: 140px;
+    max-height: 140px;
+}
+.Navbar a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.Navbar a svg {
+    transition: color 0.3s ease; 
+}
+
+.Navbar a:hover svg {
+    color: #30a8dc; 
+}
+.Page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.TexteTitre{
+  font-size: 64px;
+  font-weight: 600;
+  color: #30a8dc;
+}
+.texteGras{
+    font-size: 20px;
+    font-weight: 600;
+    color: #30a8dc;
+
+}
+.TexteSousTitre{
+    color: #4b595c;
+    font-size: 30px;
+}
+.TexteBalance{
+    color: #4b595c;
+    font-size: 20px;
+}
+.CardBalance{
+    display: flex;
+    background-color: white;
+    border: 1px solid #30a8dc;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #4b595c;
+    min-width: 700px
+
+}
+.cardBalanceDepense{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 20px 20px;
+    gap: 20px;
+
+}
+.cardBalanceRevenu{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 20px 20px;
+    gap: 20px;
+
+}
+.TitreCard{
+    font-size: 30px;
+    font-weight: 600;
+    color: #30a8dc;
+    text-align: center;
+}
+input {
+    height: 30px; 
+    padding-left: 10px;
+    border-radius: 10px;
+    border-color: #07252e;
+    border: 1;
+}
+.categorieChoix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.categorieChoix > div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer; /* Pour indiquer que l'élément est cliquable */
+    transition: background-color 0.3s; /* Transition pour un effet de changement de couleur */
+}
+
+/* Style par défaut */
+.categorieChoix .choix:hover {
+    background-color: #d3d3d3; /* Effet survol */
+}
+
+/* Style pour l'élément sélectionné */
+.categorieChoix .choix.selected {
+    background-color: #4CAF50; /* Couleur de fond de l'élément sélectionné */
+    color: white; /* Couleur du texte de l'élément sélectionné */
+}
+
+/* Optionnel : style survol avec la couleur sélectionnée */
+.categorieChoix .choix.selected:hover {
+    background-color: #45a049; /* Change la couleur survol lorsque sélectionné */
+}
+.btnValiderDepense{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #30a8dc;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btnValiderRevenu{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #30a8dc;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.date-time-picker-container {
+    position: relative;
+}
+.date-time-picker-containerRevenu {
+    position: relative;
+}
+
+.date-time-picker {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.date-time-picker input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.date-time-input {
+    width: 100%;
+    padding: 5px;
+}
+
+.date-time-picker button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.date-time-picker button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,91 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 80vh;
+  max-width: 200px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  border-right: 1px solid #30a8dc;
+  border-bottom: 1px solid #30a8dc;
+  border-radius: 20px;
+  text-align: center;
+}
+.imgLogo {
+  max-width: 140px;
+  max-height: 140px;
+}
+.Navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Navbar a svg {
+  transition: color 0.3s ease;
+}
+
+.Navbar a:hover svg {
+  color: #30a8dc;
+}
+.TexteTitre{
+    font-size: 64px;
+    font-weight: 600;
+    color: #30a8dc;
+  }
+  .texteGras{
+      font-size: 20px;
+      font-weight: 600;
+      color: #30a8dc;
+  
+  }
+  .TexteSousTitre{
+      color: #4b595c;
+      font-size: 30px;
+  }
+
+  .containerPage{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    gap: 30px;
+    min-width: 1200px;
+  }
+  .filters button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background: #2980b9;
+}
+.TexteBalance{
+  color: #4b595c;
+  font-size: 20px;
+}
+.Statistiques{
+  display: flex;
+  background-color: white;
+  border: 1px solid #3498db ;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  color: #4b595c;
+}
+.depenses{
+  text-align: center;
+}
